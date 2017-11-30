@@ -1,0 +1,129 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-size: .14rem;
+    box-sizing: border-box;
+}
+html{
+    font-size: 625%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+ul li,ol li{
+    list-style: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: .7rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: .02rem solid #ccc;
+}
+header .top{
+    height: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .top a{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .top a:nth-child(1){
+    flex:1.5;
+}
+header .top a:nth-child(2){
+    flex:5;
+    background: #f0f0f0;
+    border-radius: .1rem;
+    height: 70%;
+}
+header .top a:nth-child(2) input{
+   background: #f0f0f0;
+   border: none;
+   width: 50%;
+}
+header .nav ul{
+    display: flex;
+    height: .4rem;
+}
+header .nav ul li{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .12rem;
+}
+section{
+    flex:1;
+    overflow: auto;
+}
+section .main{
+    border-bottom: .01rem solid #ccc;
+}
+section .main dl{
+    display: flex;
+    padding: .1rem 0;
+}
+section .main dl dt{
+    flex:3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .main dl dt img{
+    width: 90%;
+    height: auto;
+}
+section .main dl dd{
+    flex:7;
+    display: flex;
+    flex-direction: column;
+}
+section .main dl dd p{
+    margin-bottom: .03rem;
+}
+section .main dl dd p:nth-child(1){
+    font-weight: bold;
+}
+section .main dl dd p:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    padding-right: .1rem;
+}
+section .main dl dd p:nth-child(2) span:nth-child(2){
+    border: .01rem solid red; 
+    border-radius: .05rem;
+    font-size: .12rem;
+}
+section .main dl dd p:nth-child(3){
+    color:#f60;
+}
+section .main dl dd p:nth-child(3) span:nth-child(1){
+    font-size: .16rem;
+    margin-right: .1rem;
+}
+footer{
+    height: .45rem;
+    display: flex;
+    border-top: .01rem solid #ccc;
+}
+footer dl{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
